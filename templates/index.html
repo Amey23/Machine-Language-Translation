@@ -1,0 +1,19 @@
+<html>
+<head></head>
+
+<body><br><br><br>
+<center>
+<h1>Type your content below.</h1>
+<form action="{{ url_for('predict')}}"method="post">
+<input type="text" name="content"><br><br>
+<button type="submit" value="submit">predict</button>
+</form>
+
+<br>
+<br>
+<h2>Machine Translated Content:-</h2>
+{{ prediction_text }}
+   
+</center>   
+</body>
+</html>
